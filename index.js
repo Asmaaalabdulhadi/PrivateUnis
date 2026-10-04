@@ -52,11 +52,11 @@ app.get("/students/:cid", (req, res) => {
 });
 
 /*
-//3. GET a jokes by filtering on the joke type
+//3. GET a student by filtering the status
 app.get("/filter", (req, res) => {
-  const type = req.query.type;//here we use query
-  const filteredActivities = jokes.filter((joke) => joke.jokeType === type);
-  res.json(filteredActivities);
+  const type = req.query.type;//here we use query  
+  const filteredStudents = students.filter((student) => student.status === type);
+  res.json(filteredStudents);
 });
 
 */
